@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maze algorithms</title>
+    <style>
+
+        .cell{
+
+            border: .5px solid rgb(40, 116, 126);
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            color:rgb(66, 67, 67);
+        }
+
+    
+
+    </style>
+</head>
+<body>
+    <div>
+        <select id="mazegenerator">
+            <option value="0">create your maze with...?</option>
+            <option value="1">depth first search</option>
+            <option value="2">hunt and kill</option>
+            <option value="3">kruskal</option>
+            <option value="4">growing tree</option>
+            <option value="5">aldous broder</option>
+            <option value="6">binary tree</option>
+        </select>
+        <select id="solvemaze">
+            <option value="0">solve maze with...?</option>
+            <option value="1">depth first search</option>
+            <option value="2">Breadth first search</option>
+        </select>
+        <button id="resetgrid">reset grid</button>
+    </div>
+    <p></p>
+    <div class="grid"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="functions.js"></script>
+    <script src="algorithms/depthfirstsearch.js"></script>
+    <script src="algorithms/huntandkill.js"></script>
+    <script src="algorithms/kruskal.js"></script>
+    <script src="algorithms/growingtree.js"></script>
+    <script src="algorithms/aldousbroder.js"></script>
+    <script src="algorithms/binarytree.js"></script>
+    <script src="solve_dfs.js"></script>
+    <script src="solve_bfs.js"></script>
+    <script src="index.js"></script>
+    <script src="controls.js"></script>
+</body>
+</html>
