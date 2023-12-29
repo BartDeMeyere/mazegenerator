@@ -20,6 +20,8 @@ function resetgrid(){
     currentcell = undefined
     stack = []
     canfloodfill = true
+    currentrow = 0
+    currentcol = 0
 
     for(var i = 0 ; i < ROWS ; i++){
 
