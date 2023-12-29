@@ -9,6 +9,7 @@ $("#mazegenerator").on("change",  function(){
         case "4": growingtree();break;
         case "5": aldousbroder();break;
         case "6": binarytree();break;
+        case "7": console.log("not yet available");break;
     }
 
     $("#mazegenerator")[0].selectedIndex = 0
