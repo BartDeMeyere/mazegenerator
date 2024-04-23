@@ -3,7 +3,7 @@ let c = canvas.getContext("2d")
 
 let rows = 20
 let cols = 20
-let cellsize = 20
+let cellsize = 32
 
 
 $("canvas").css('width' , cols * cellsize + "px")
@@ -63,7 +63,7 @@ function DrawMaze(){
 
             case 1: depthfirstsearch();break;
             case 2: HuntandKill();break;
-            case 3: kruskal();break;
+            case 3: kruskal();  cells.forEach(cell =>{ cell.displayset = true}); break;
             case 4: prims();break;
         }
 

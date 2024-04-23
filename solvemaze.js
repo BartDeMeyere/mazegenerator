@@ -102,15 +102,15 @@ function RenderPath(){
     c.clearRect(0 , 0 , canvas.width , canvas.height)
 
     //draw cells
-    cells.forEach(cell => { cell.draw() })
+    cells.forEach(cell => { cell.displayset = false;  cell.draw() })
 
     //draw path
     if(path.length > 0){
 
         c.save()
         c.beginPath()
-        c.strokeStyle = "lime"
-        c.lineWidth = cellsize / 10
+        c.strokeStyle = "tomato"
+        c.lineWidth = cellsize / 8
         
         for(var i = 0 ; i < path.length ; i++){
 
