@@ -1,9 +1,9 @@
 let canvas = $("canvas")[0]
 let c = canvas.getContext("2d")
 
-let rows = 20
-let cols = 20
-let cellsize = 32
+let rows = 15
+let cols = 15
+let cellsize = 30
 
 
 $("canvas").css('width' , cols * cellsize + "px")
@@ -24,7 +24,7 @@ CreateCells()
 let startcell = GetCell(0,0)
 let endcell = GetCell(rows - 1 , cols - 1)
 let path = []
-let algorithm = 3
+let algorithm = 1
 
 function CreateCells(){
 
